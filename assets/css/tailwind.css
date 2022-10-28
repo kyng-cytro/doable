@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "logo-font";
+  src: url("~/assets/fonts/3Dumb.woff") format("woff");
+}

@@ -1,10 +1,11 @@
 <template>
-  <div :class="{ dark: darkMode }">
-    <NavBar />
-    <div class="text-red-500 dark:text-yellow-300">Test Text</div>
+  <div class="h-screen" :class="{ dark: darkMode }">
+    <div class="h-full bg-slate-200 dark:bg-slate-800">
+      <NavBar class="sticky top-0" />
+    </div>
   </div>
 </template>
 
 <script setup>
-const darkMode = ref(false);
+const darkMode = ref(true);
 </script>
