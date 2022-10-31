@@ -3,7 +3,7 @@
     <Transition name="fade">
       <div
         v-show="navOpen"
-        class="fixed top-16 left-0 z-10 h-full w-full bg-transparent backdrop-blur-sm transition delay-150 ease-in-out"
+        class="fixed top-16 left-0 z-10 h-full w-full bg-transparent backdrop-blur-sm transition delay-150 ease-in-out sm:hidden"
         @click="navOpen = false"
       ></div>
     </Transition>
@@ -12,42 +12,20 @@
     >
       <header class="z-50 flex items-center justify-between sm:justify-around">
         <div class="flex items-center sm:gap-14 md:gap-20">
-          <NuxtLink to="/">
-            <h3
-              class="hidden font-logo text-4xl leading-4 tracking-tight transition duration-200 ease-in-out hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400 sm:block md:text-4xl"
-            >
-              do.Able
-            </h3>
-            <h3
-              class="block font-logo text-4xl leading-4 tracking-tight transition duration-200 ease-in-out hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400 sm:hidden"
-            >
-              d.A
-            </h3>
-          </NuxtLink>
+          <UILogo />
           <div
             class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex md:text-xl"
           >
-            <a :href="link.url" v-for="(link, index) in links" :key="index">
-              <span
-                class="hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400"
-                >{{ link.name }}</span
-              >
-            </a>
+            <UIButtonsNavItemDesktop
+              v-for="(link, index) in links"
+              :key="index"
+              :link="link"
+            />
           </div>
         </div>
-        <div class="hidden items-center gap-10 sm:flex">
-          <NuxtLink to="/">
-            <span
-              class="transition duration-200 ease-in-out hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400 md:text-xl"
-              >Log in</span
-            >
-          </NuxtLink>
-          <NuxtLink to="/">
-            <span
-              class="rounded-lg bg-blue-500 px-6 py-3 text-slate-100 transition duration-200 ease-in-out hover:bg-blue-600 focus:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:bg-blue-800"
-              >Get Started</span
-            >
-          </NuxtLink>
+        <div class="hidden items-center gap-6 sm:flex md:gap-10">
+          <UIButtonsGetStartedDesktop :isLogin="true" />
+          <UIButtonsGetStartedDesktop width="px-6" :isLogin="false" />
         </div>
         <div class="sm:hidden">
           <Transition name="menu" mode="out-in">
@@ -73,30 +51,15 @@
         >
           <div class="flex flex-col items-center gap-10 pt-3">
             <div class="flex w-4/5 flex-col gap-3">
-              <a
-                class="cursor-pointer border-b-2 border-gray-500 p-3 transition duration-200 ease-in-out hover:border-blue-800 hover:text-blue-800 focus:border-blue-800 focus:text-blue-800 dark:hover:border-blue-400 dark:hover:text-blue-400 dark:focus:border-blue-400 dark:focus:text-blue-400"
-                :href="link.url"
+              <UIButtonsNavItemMobile
                 v-for="(link, index) in links"
                 :key="index"
-              >
-                {{ link.name }}
-              </a>
+                :link="link"
+              />
             </div>
             <div class="flex w-4/5 flex-col gap-3 pb-6">
-              <NuxtLink to="/">
-                <div
-                  class="rounded-lg border-2 border-blue-500 bg-transparent py-2.5 text-center text-black transition duration-200 ease-in-out hover:bg-blue-500 hover:text-slate-100 focus:bg-blue-500 focus:text-slate-100 dark:text-slate-100"
-                >
-                  Log in
-                </div>
-              </NuxtLink>
-              <NuxtLink to="/">
-                <div
-                  class="rounded-lg border-2 border-blue-600 bg-blue-600 py-2.5 text-center text-slate-100 transition duration-200 ease-in-out hover:bg-transparent hover:text-black focus:bg-transparent focus:text-black dark:hover:text-slate-100 dark:focus:text-slate-100"
-                >
-                  Get Started
-                </div>
-              </NuxtLink>
+              <UIButtonsGetStartedMobile :isLogin="true" />
+              <UIButtonsGetStartedMobile :isLogin="false" />
             </div>
           </div>
         </header>

@@ -19,12 +19,7 @@
         </p>
       </div>
       <div class="pb-6 pt-3">
-        <NuxtLink to="/">
-          <span
-            class="rounded-lg bg-blue-500 px-10 py-3 text-slate-100 transition duration-200 ease-in-out hover:bg-blue-600 focus:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:bg-blue-800"
-            >Get Started</span
-          >
-        </NuxtLink>
+        <UIButtonsGetStartedDesktop width="px-10" />
       </div>
     </div>
   </div>
