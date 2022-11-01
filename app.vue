@@ -1,13 +1,15 @@
 <template>
   <div class="font-poppins h-screen" :class="{ dark: darkMode }">
-    <div class="h-full bg-slate-200 dark:bg-slate-800">
+    <div class="z-[10] h-full bg-slate-200 dark:bg-slate-800">
       <!-- Nav bar -->
-      <NavBar class="sticky top-0" />
+      <NavBar class="sticky top-0 z-[10000]" />
       <!-- Main Content-->
-      <HomeContent class="mt-6" />
+      <HomeContent class="relative z-20 mt-6" />
       <!-- Footer -->
-      <div></div>
     </div>
+    <HomeContentBackdrop
+      class="dark:opacity- z-[5] opacity-75 dark:opacity-5"
+    />
   </div>
 </template>
 

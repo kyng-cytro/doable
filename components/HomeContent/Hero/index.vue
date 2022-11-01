@@ -19,7 +19,7 @@
         </p>
       </div>
       <div class="pb-6 pt-3">
-        <UIButtonsGetStartedDesktop width="px-10" />
+        <UIButtonsGetStartedDesktop :isLogin="false" width="px-10" />
       </div>
     </div>
   </div>
