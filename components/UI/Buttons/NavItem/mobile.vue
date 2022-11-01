@@ -6,7 +6,7 @@
     {{ link.name }}
   </a>
 </template>
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   link: {
     type: Object,

@@ -11,6 +11,6 @@
   </div>
 </template>
 
-<script setup>
-const darkMode = ref(false);
+<script setup lang="ts">
+const darkMode = ref(true);
 </script>

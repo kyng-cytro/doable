@@ -67,7 +67,7 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 const links = ref([
   {
