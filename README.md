@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# do.Able
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+A life planner capable of handling everyone and everything
 
 ## Setup
 
