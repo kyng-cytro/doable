@@ -8,11 +8,12 @@
       <!-- Footer -->
     </div>
     <HomeContentBackdrop
-      class="dark:opacity- z-[5] opacity-75 dark:opacity-5"
+      :isDark="darkMode"
+      class="z-[5] opacity-75 dark:opacity-5"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-const darkMode = ref(true);
+const darkMode = ref(false);
 </script>

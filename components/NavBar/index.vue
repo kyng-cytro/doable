@@ -14,7 +14,7 @@
         <div class="flex items-center sm:gap-14 md:gap-20">
           <UILogo />
           <div
-            class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex md:text-xl"
+            class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex lg:text-xl"
           >
             <UIButtonsNavItemDesktop
               v-for="(link, index) in links"
