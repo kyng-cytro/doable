@@ -10,7 +10,7 @@
     <div
       class="flex flex-col gap-6 bg-slate-200 py-6 px-6 dark:bg-slate-800 dark:text-slate-200 sm:px-0"
     >
-      <header class="z-50 flex items-center justify-between sm:justify-around">
+      <nav class="z-50 flex items-center justify-between sm:justify-around">
         <div class="flex items-center sm:gap-14 md:gap-20">
           <UILogo />
           <div
@@ -43,9 +43,9 @@
             />
           </Transition>
         </div>
-      </header>
+      </nav>
       <Transition name="shutter">
-        <header
+        <nav
           class="fixed left-0 top-16 z-[15000] w-full border-b border-slate-100 bg-slate-200 shadow-lg dark:border-slate-700 dark:bg-slate-800 sm:hidden"
           v-if="navOpen"
         >
@@ -55,6 +55,7 @@
                 v-for="(link, index) in links"
                 :key="index"
                 :link="link"
+                @click="navOpen = false"
               />
             </div>
             <div class="flex w-4/5 flex-col gap-3 pb-6">
@@ -62,7 +63,7 @@
               <UIButtonsGetStartedMobile :isLogin="false" />
             </div>
           </div>
-        </header>
+        </nav>
       </Transition>
     </div>
   </div>
@@ -72,7 +73,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/vue/24/outline";
 const links = ref([
   {
     name: "Features",
-    url: "#",
+    url: "#features",
   },
   {
     name: "Pricing",
