@@ -12,7 +12,7 @@
     >
       <nav class="z-50 flex items-center justify-between sm:justify-around">
         <div class="flex items-center sm:gap-14 md:gap-40">
-          <UILogo />
+          <UILogo @click="navOpen = false" />
           <div
             class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex"
           >
@@ -59,8 +59,14 @@
               />
             </div>
             <div class="flex w-4/5 flex-col gap-3 pb-6">
-              <UIButtonsGetStartedMobile :isLogin="true" />
-              <UIButtonsGetStartedMobile :isLogin="false" />
+              <UIButtonsGetStartedMobile
+                @click="navOpen = false"
+                :isLogin="true"
+              />
+              <UIButtonsGetStartedMobile
+                @click="navOpen = false"
+                :isLogin="false"
+              />
             </div>
           </div>
         </nav>
