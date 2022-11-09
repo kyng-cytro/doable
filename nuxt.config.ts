@@ -6,8 +6,8 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      charset: "utf-16",
-      viewport: "initial-scale=1",
+      charset: "UTF-8",
+      viewport: "width=device-width, initial-scale=1",
       title: "doAble",
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
