@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-around gap-6">
+  <div class="flex flex-col justify-around gap-6 dark:text-slate-100">
     <div class="flex justify-center">
       <h3 class="max-w-sm px-3 text-center text-xl sm:max-w-lg sm:text-3xl">
         A Life Planner That Will Take The Stress Out Of Your Day

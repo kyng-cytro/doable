@@ -6,7 +6,12 @@
       <!-- Main Content-->
       <HomeContent class="relative z-20 py-6" />
       <!-- Footer -->
-      <div>Footer Stuff</div>
+      <div
+        class="cursor-pointer dark:text-slate-100"
+        @click="darkMode = !darkMode"
+      >
+        Toggle theme
+      </div>
     </div>
     <HomeContentBackdrop
       :isDark="darkMode"

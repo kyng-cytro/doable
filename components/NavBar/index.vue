@@ -11,10 +11,10 @@
       class="flex flex-col gap-6 bg-slate-200 py-6 px-6 dark:bg-slate-800 dark:text-slate-200 sm:px-0"
     >
       <nav class="z-50 flex items-center justify-between sm:justify-around">
-        <div class="flex items-center sm:gap-14 md:gap-20">
+        <div class="flex items-center sm:gap-14 md:gap-40">
           <UILogo />
           <div
-            class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex lg:text-xl"
+            class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex"
           >
             <UIButtonsNavItemDesktop
               v-for="(link, index) in links"

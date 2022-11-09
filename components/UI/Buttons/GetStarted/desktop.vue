@@ -1,7 +1,7 @@
 <template>
   <NuxtLink to="/" v-if="props.isLogin">
     <span
-      class="transition duration-200 ease-in-out hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400 lg:text-xl"
+      class="transition duration-200 ease-in-out hover:text-blue-800 focus:text-blue-800 dark:hover:text-blue-400 dark:focus:text-blue-400"
       >Log in</span
     >
   </NuxtLink>
