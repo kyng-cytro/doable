@@ -6,8 +6,10 @@
       <!-- Main Content-->
       <HomeContent class="relative z-20 py-6" />
       <!-- Footer -->
+      <Footer class="relative z-20 pt-6" />
+      <!-- TODO: make a button for theme -->
       <div
-        class="cursor-pointer dark:text-slate-100"
+        class="cursor-pointer text-center dark:text-slate-100"
         @click="darkMode = !darkMode"
       >
         Toggle theme
