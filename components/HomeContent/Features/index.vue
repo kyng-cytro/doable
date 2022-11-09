@@ -11,7 +11,9 @@
       >
         <div class="flex flex-col gap-3">
           <h3>Logo</h3>
-          <h3 class="text-xl lg:text-2xl">The doAble Method</h3>
+          <h3 class="text-base font-semibold uppercase sm:text-xl lg:text-2xl">
+            The doAble Method
+          </h3>
           <p class="max-w-md text-xs md:max-w-md lg:text-sm">
             doAble is more than just a life planner - it's a complete system for
             becoming focused, organized, and calm. The doAble Method is a
@@ -21,7 +23,9 @@
         </div>
         <div class="flex flex-col gap-3">
           <h3>Logo</h3>
-          <h3 class="text-xl lg:text-2xl">The doAble Method</h3>
+          <h3 class="text-base font-semibold uppercase sm:text-xl lg:text-2xl">
+            The doAble Method
+          </h3>
           <p class="max-w-md text-xs md:max-w-md lg:text-sm">
             doAble is more than just a life planner - it's a complete system for
             becoming focused, organized, and calm. The doAble Method is a
@@ -31,7 +35,9 @@
         </div>
         <div class="flex flex-col gap-3">
           <h3>Logo</h3>
-          <h3 class="text-xl lg:text-2xl">The doAble Method</h3>
+          <h3 class="text-base font-semibold uppercase sm:text-xl lg:text-2xl">
+            The doAble Method
+          </h3>
           <p class="max-w-md text-xs md:max-w-md lg:text-sm">
             doAble is more than just a life planner - it's a complete system for
             becoming focused, organized, and calm. The doAble Method is a

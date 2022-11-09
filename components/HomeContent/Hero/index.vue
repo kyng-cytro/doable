@@ -11,7 +11,7 @@
       </div>
       <div class="flex justify-center px-8">
         <p
-          class="max-w-sm text-center tracking-tight sm:max-w-md sm:tracking-normal"
+          class="max-w-sm text-center text-sm tracking-tight sm:text-base sm:tracking-normal"
         >
           We'll determine what you should be doing and when. All you need to
           know is that it would be
