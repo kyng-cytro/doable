@@ -5,7 +5,7 @@
         <h3
           class="font-logo max-w-md text-center text-5xl sm:max-w-xl sm:text-6xl"
         >
-          Let Us Help You,<br />
+          Let Us Help You,<br class="hidden sm:block" />
           Get Your Sh*t Together.
         </h3>
       </div>
