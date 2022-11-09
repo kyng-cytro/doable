@@ -11,7 +11,7 @@
           >
             Resources
           </h2>
-          <ul class="text-gray-600 dark:text-slate-300">
+          <ul class="text-sm text-gray-600 dark:text-slate-300 sm:text-base">
             <li class="mb-4">
               <a href="https://flowbite.com/" class="hover:underline"
                 >Flowbite</a
@@ -30,7 +30,7 @@
           >
             Follow us
           </h2>
-          <ul class="text-gray-600 dark:text-slate-300">
+          <ul class="text-sm text-gray-600 dark:text-slate-300 sm:text-base">
             <li class="mb-4">
               <a
                 href="https://github.com/kyng-cytro/doable"
@@ -50,7 +50,7 @@
           >
             Legal
           </h2>
-          <ul class="text-gray-600 dark:text-slate-300">
+          <ul class="text-sm text-gray-600 dark:text-slate-300 sm:text-base">
             <li class="mb-4">
               <!--TODO: fix privacy url -->
               <a href="#" class="hover:underline">Privacy Policy</a>
