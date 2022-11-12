@@ -11,7 +11,7 @@
       class="flex flex-col gap-6 bg-slate-200 py-6 px-6 dark:bg-slate-800 dark:text-slate-200 sm:px-0"
     >
       <nav class="z-50 flex items-center justify-between sm:justify-around">
-        <div class="flex items-center sm:gap-14 md:gap-40">
+        <div class="flex items-center sm:gap-5 md:gap-28 lg:gap-40">
           <UILogo @click="navOpen = false" />
           <div
             class="hidden items-center gap-6 transition duration-200 ease-in-out sm:flex"
@@ -23,25 +23,37 @@
             />
           </div>
         </div>
-        <div class="hidden items-center gap-6 sm:flex md:gap-10">
-          <UIButtonsGetStartedDesktop :isLogin="true" />
-          <UIButtonsGetStartedDesktop width="px-6" :isLogin="false" />
+        <div class="hidden items-center gap-3 sm:flex md:gap-6">
+          <NavBarThemeButton
+            @toggleMode="$emit('toggleMode')"
+            :darkMode="darkMode"
+          />
+          <div class="flex items-center gap-5 md:gap-6 lg:gap-10">
+            <UIButtonsGetStartedDesktop :isLogin="true" />
+            <UIButtonsGetStartedDesktop width="px-6" :isLogin="false" />
+          </div>
         </div>
-        <div class="sm:hidden">
-          <Transition name="menu" mode="out-in">
-            <Bars3BottomRightIcon
-              key="m"
-              class="h-8 w-8 cursor-pointer hover:text-blue-400 focus:text-blue-400"
-              @click="navOpen = !navOpen"
-              v-if="!navOpen"
-            />
-            <XMarkIcon
-              key="x"
-              class="h-8 w-8 cursor-pointer hover:text-blue-400 focus:text-blue-400"
-              @click="navOpen = !navOpen"
-              v-else="navOpen"
-            />
-          </Transition>
+        <div class="flex items-center gap-10 sm:hidden">
+          <NavBarThemeButton
+            @toggleMode="$emit('toggleMode')"
+            :darkMode="darkMode"
+          />
+          <div>
+            <Transition name="menu" mode="out-in">
+              <Bars3BottomRightIcon
+                key="m"
+                class="h-8 w-8 cursor-pointer hover:text-blue-400 focus:text-blue-400"
+                @click="navOpen = !navOpen"
+                v-if="!navOpen"
+              />
+              <XMarkIcon
+                key="x"
+                class="h-8 w-8 cursor-pointer hover:text-blue-400 focus:text-blue-400"
+                @click="navOpen = !navOpen"
+                v-else="navOpen"
+              />
+            </Transition>
+          </div>
         </div>
       </nav>
       <Transition name="shutter">
@@ -76,6 +88,7 @@
 </template>
 <script setup lang="ts">
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+import { emit } from "process";
 const links = ref([
   {
     name: "Features",
@@ -92,7 +105,15 @@ const links = ref([
 ]);
 
 const navOpen = ref(false);
+
+const props = defineProps({
+  darkMode: {
+    type: Boolean,
+    required: true,
+  },
+});
 </script>
+
 <style scoped>
 .shutter-enter-active {
   animation: shutter-in-top 0.25s ease 0s 1 normal none;

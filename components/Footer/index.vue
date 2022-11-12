@@ -69,10 +69,10 @@
     <div
       class="sm:mx-auto sm:flex sm:max-w-screen-xl sm:items-center sm:justify-between"
     >
+      <!--TODO: change this link -->
       <span class="text-sm text-gray-500 dark:text-slate-300 sm:text-center"
-        >© 2022
-        <a href="https://flowbite.com/" class="hover:underline">doAble™</a>. All
-        Rights Reserved.
+        >Made by
+        <a href="#" class="hover:bg-blue-200 hover:underline">Cytro</a> with ❤️
       </span>
       <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
         <a
