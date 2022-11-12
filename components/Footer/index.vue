@@ -72,7 +72,8 @@
       <!--TODO: change this link -->
       <span class="text-sm text-gray-500 dark:text-slate-300 sm:text-center"
         >Made by
-        <a href="#" class="hover:bg-blue-200 hover:underline">Cytro</a> with ❤️
+        <a href="#" class="hover:bg-blue-200 hover:underline">Cytro</a> with
+        <span>{{ darkMode ? "💙" : "❤️" }}</span>
       </span>
       <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
         <a
@@ -149,3 +150,12 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+  darkMode: {
+    type: Boolean,
+    required: true,
+  },
+});
+</script>
