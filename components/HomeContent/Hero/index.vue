@@ -3,6 +3,7 @@
     <div class="flex flex-col items-center justify-center gap-6">
       <div class="px-3">
         <h3
+          style="font-display: fallback"
           class="font-logo max-w-md text-center text-5xl sm:max-w-xl sm:text-6xl"
         >
           Let Us Help You,<br class="hidden sm:block" />
@@ -15,7 +16,9 @@
         >
           We'll determine what you should be doing and when. All you need to
           know is that it would be
-          <span class="font-logo text-xl">do.Able</span>.
+          <span style="font-display: fallback" class="font-logo text-xl"
+            >do.Able</span
+          >.
         </p>
       </div>
       <div class="pb-6 pt-3">

@@ -1,5 +1,11 @@
 <template>
   <div class="flex justify-center">
-    <img src="~/assets/images/banner.png" class="sm:w-3/6" />
+    <nuxt-img
+      src="/banner.png"
+      class="w-full sm:w-3/6"
+      format="webp"
+      quality="80"
+      placeholder
+    />
   </div>
 </template>

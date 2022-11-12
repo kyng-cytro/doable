@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27769790.4b27db3",
     "@nuxtjs/tailwindcss": "^6.1.1",
     "nuxt": "3.0.0-rc.12",
     "prettier": "^2.7.1",
