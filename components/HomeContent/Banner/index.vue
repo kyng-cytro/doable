@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <nuxt-img
-      src="/banner.png"
+      src="/images/banner.png"
       class="w-full sm:w-3/6"
       format="webp"
       quality="80"
