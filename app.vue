@@ -10,7 +10,7 @@
       <!-- Main Content-->
       <HomeContent class="relative z-20 py-6" />
       <!-- Footer -->
-      <Footer class="relative z-20 pt-6" :darkMode="darkMode" />
+      <Footer class="relative z-20 mt-20" :darkMode="darkMode" />
     </div>
     <HomeContentBackdrop
       :isDark="darkMode"
