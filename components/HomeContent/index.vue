@@ -8,5 +8,7 @@
     <HomeContentReviews class="py-5 sm:py-10" />
     <!-- Features -->
     <HomeContentFeatures class="py-5 sm:py-10" />
+    <!-- Pricing -->
+    <HomeContentPricing class="py-5 sm:py-10" />
   </div>
 </template>
