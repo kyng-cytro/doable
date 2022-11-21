@@ -5,7 +5,7 @@
       <NavBar
         class="sticky top-0 z-[10000]"
         :darkMode="darkMode"
-        @toggleMode="darkMode = !darkMode"
+        @toggleMode="toggleMode"
       />
       <!-- Main Content-->
       <HomeContent class="relative z-20 py-6" />
@@ -21,5 +21,6 @@
 
 <script setup lang="ts">
 //TODO: setup state management for this
-const darkMode = ref(true);
+const darkMode = useDark();
+const toggleMode = useToggle(darkMode);
 </script>
