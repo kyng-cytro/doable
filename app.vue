@@ -20,7 +20,6 @@
 </template>
 
 <script setup lang="ts">
-//TODO: setup state management for this
 const darkMode = useDark();
 const toggleMode = useToggle(darkMode);
 </script>
